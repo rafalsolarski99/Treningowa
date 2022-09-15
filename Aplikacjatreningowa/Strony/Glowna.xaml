@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aplikacjatreningowa.Strony.Glowna"
+             xmlns:Strony="clr-namespace:Aplikacjatreningowa.Strony"
+             Title="Glowna">
+    
+    <ContentPage.Resources>
+        
+        <ResourceDictionary>
+            <Style x:Key="mainfont" TargetType="Label">
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="FontFamily" Value="CentraNo2-Extrabold"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        
+        <VerticalStackLayout BackgroundColor="Transparent" Padding="10" Margin="0,0,0,0">            
+           
+            <HorizontalStackLayout BackgroundColor="Transparent">
+                <Label 
+                    FontFamily="CentraNo2-Extrabold"
+                     Margin="85,45,0,0"
+                    Text="Cześć!"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="Center"
+                    FontSize="70"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout BackgroundColor="Transparent">
+                <Label 
+                    FontFamily="CentraNo2-Extrabold"
+                    Margin="55,0,0,0"
+                    Text="Sprawdź ćwiczenie na dziś!"
+                    HorizontalTextAlignment="Center"
+                    VerticalOptions="CenterAndExpand" 
+                    FontSize="20"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout BackgroundColor="Transparent">
+                <Label 
+                    FontFamily="CentraNo2-Extrabold"
+                    Margin="136,20,0,0"
+                    Text="PRZYSIADY"
+                    HorizontalTextAlignment="Center"
+                    TextColor="RoyalBlue"
+                    VerticalOptions="CenterAndExpand" 
+                    FontSize="20"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Padding="1" >
+                <Image
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    IsAnimationPlaying="True" 
+                    HeightRequest="366"
+                    WidthRequest="366"
+                    Margin="0,70,0,0"
+                    Source="przysiady.gif"/>
+                </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+        
+
+        
+    </ContentPage.Content>
+</ContentPage>

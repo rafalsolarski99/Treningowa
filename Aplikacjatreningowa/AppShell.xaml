@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Aplikacjatreningowa.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Aplikacjatreningowa"
+    xmlns:Strony="clr-namespace:Aplikacjatreningowa.Strony"
+    FlyoutBehavior="Flyout" 
+    FlyoutHeaderBehavior="Fixed" 
+    FlyoutVerticalScrollMode="Auto">
+
+
+
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+</Shell>
